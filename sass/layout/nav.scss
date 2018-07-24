@@ -1,0 +1,21 @@
+/*! = <nav>
+-------------------------------------------------------------- */
+nav ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+
+  li:not(:first-child) {
+    margin-left: var(--gap);
+  }
+
+  li {
+    a {
+      color: var(--color-primary);
+    }
+  }
+
+}
+
+/*! = <nav class="main-menu">
+-------------------------------------------------------------- */

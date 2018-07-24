@@ -1,0 +1,91 @@
+.section {
+  padding: calc(var(--gap) * 5) 0; }
+
+.section-main {
+  display: grid;
+  grid-gap: calc(var(--gap) * 3);
+  grid-column-end: span 6; }
+  .section-main svg {
+    width: 100px; }
+    .section-main svg path {
+      fill: var(--color-primary); }
+    .section-main svg:hover path {
+      fill: var(--color-secondary); }
+  .section-main h6 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: min-content max-content;
+    grid-column-gap: calc(var(--gap) / 2); }
+
+.section-one {
+  display: grid;
+  grid-gap: calc(var(--gap) * 3);
+  grid-column-start: 6;
+  grid-column-end: span 7; }
+
+.section-two {
+  display: grid;
+  grid-gap: calc(var(--gap) * 3);
+  grid-column-start: 1;
+  grid-column-end: span 12; }
+
+.section-three {
+  display: grid;
+  grid-gap: calc(var(--gap) * 3);
+  grid-column-start: 1;
+  grid-column-end: span 12; }
+
+.section-four {
+  display: grid;
+  grid-gap: calc(var(--gap) * 3);
+  grid-column-start: 1;
+  grid-column-end: span 12; }
+
+.section-five {
+  display: grid;
+  grid-gap: calc(var(--gap) * 3);
+  grid-column-start: 6;
+  grid-column-end: span 7; }
+
+.section-six {
+  display: grid;
+  grid-gap: calc(var(--gap) * 3);
+  grid-column-start: 6;
+  grid-column-end: span 7; }
+
+.section-seven {
+  display: grid;
+  grid-gap: calc(var(--gap) * 3);
+  grid-column-start: 1;
+  grid-column-end: span 12; }
+  .section-seven .content {
+    border: 2px solid var(--color-beige);
+    border-radius: calc(var(--gap) / 2);
+    display: inherit;
+    grid-gap: inherit;
+    padding: calc(var(--gap) * 2); }
+
+@media (max-width: 600px) {
+  .section-main {
+    grid-column-end: span 10; }
+  .section-one {
+    grid-column-start: 1;
+    grid-column-end: span 12; }
+  .section-two {
+    grid-column-start: 1;
+    grid-column-end: span 12; }
+  .section-three {
+    grid-column-start: 1;
+    grid-column-end: span 12; }
+  .section-four {
+    grid-column-start: 1;
+    grid-column-end: span 12; }
+  .section-five {
+    grid-column-start: 1;
+    grid-column-end: span 12; }
+  .section-six {
+    grid-column-start: 1;
+    grid-column-end: span 12; }
+  .section-seven {
+    grid-column-start: 1;
+    grid-column-end: span 12; } }

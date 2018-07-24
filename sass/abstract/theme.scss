@@ -1,0 +1,64 @@
+.main-container-pages {
+  display: grid;
+}
+
+.main-container-pages > div {
+  grid-column: 1 / 2;
+}
+
+.main-container-pages > div:first-child {
+  grid-row: 1 / 2;
+  z-index: 2;
+  grid-auto-rows: max-content;
+}
+
+.main-container-pages div:nth-child(2) {
+  grid-row: 1 / 2;
+  z-index: 1;
+  height: 90vh;
+  min-height: 90vh;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-columns: minmax(15px, auto) repeat(12, var(--app-width)) minmax(15px, auto);
+
+    > .inner {
+      display: grid;
+      grid-column: 2 / 14;
+      grid-gap: var(--gap);
+      grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+* {
+
+  &.bg-primary {
+    background: var(--color-primary);
+  }
+  
+  &.bg-secondary {
+    background: var(--color-secondary);
+  }
+
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::after {
+  bottom: 0;
+  background: url('../../images/overlay.svg');
+  background-size: 4px 4px;
+  content: '';
+  height: 70%;
+  position: absolute;
+  width: 100%;
+  opacity: .2;
+}
+
+svg .overlay-circle {
+  fill: var(--color-primary);
+}

@@ -1,0 +1,56 @@
+header {
+  grid-column-end: span 12;
+  display: grid;
+  grid-row-gap: var(--gap);
+  padding: calc(var(--gap) * 2) 0; }
+  header .logo svg {
+    width: 150px; }
+    header .logo svg .logo-r {
+      fill: var(--color-primary); }
+    header .logo svg .logo-i {
+      fill: var(--color-primary); }
+    header .logo svg .logo-c {
+      fill: var(--color-primary); }
+    header .logo svg .logo-e {
+      fill: var(--color-primary); }
+    header .logo svg .logo-and {
+      fill: var(--color-secondary); }
+    header .logo svg .logo-b {
+      fill: var(--color-primary); }
+    header .logo svg .logo-e {
+      fill: var(--color-primary); }
+    header .logo svg .logo-a {
+      fill: var(--color-primary); }
+    header .logo svg .logo-n {
+      fill: var(--color-primary); }
+    header .logo svg .logo-s {
+      fill: var(--color-primary); }
+    header .logo svg .logo-c {
+      fill: var(--color-primary); }
+    header .logo svg .logo-r {
+      fill: var(--color-primary); }
+    header .logo svg .logo-e {
+      fill: var(--color-primary); }
+    header .logo svg .logo-a {
+      fill: var(--color-primary); }
+    header .logo svg .logo-t {
+      fill: var(--color-primary); }
+    header .logo svg .logo-i {
+      fill: var(--color-primary); }
+    header .logo svg .logo-v {
+      fill: var(--color-primary); }
+    header .logo svg .logo-e {
+      fill: var(--color-primary); }
+  header .main-menu {
+    grid-column-end: span 9;
+    align-items: center;
+    display: grid;
+    justify-content: start; }
+    header .main-menu ul li:last-child {
+      display: none; }
+
+@media (max-width: 1023px) {
+  header .main-menu ul li:last-child {
+    display: grid; }
+  header .main-menu ul li:not(:last-child) {
+    display: none; } }
