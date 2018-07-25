@@ -72,19 +72,14 @@ $(function() {
 
     Page.init();
 
-    /**
-     * Notes: 
-     * 
-     * example how to add items:
-     */
+});
 
-    /*
-    
-    var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
-    
-    // call the plugin's add method
-    ss.add($items);
+function toggleMenu(x) {
+    x.classList.toggle("animate")
+    document.getElementsByTagName('body')[0].classList.toggle('perspective')
+    document.getElementsByClassName('main-container')[0].classList.toggle("animate-main")
+}
 
-    */
-
+$(function() {
+    $("#headerContent").load("header.html");
 });

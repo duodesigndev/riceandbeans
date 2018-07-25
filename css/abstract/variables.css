@@ -1,0 +1,37 @@
+:root {
+  /*! = gap
+  -------------------------------------------------------------- */
+  --gap: 1.25rem;
+  /*! = typography
+  -------------------------------------------------------------- */
+  --font-regular:   300;
+  --font-semi-bold: 600;
+  --font-bold:      800;
+  --font-primary:   'Montserrat', sans-serif;
+  /*! = theme color
+  -------------------------------------------------------------- */
+  --color-primary:  #282828;
+  --color-secondary:#6ade93;
+  --color-light:    #fbfaf9;
+  --color-dark:     #282828;
+  /*! = vsouz color
+  -------------------------------------------------------------- */
+  --vsouz-color-primary:  rgba(217, 190, 174, 1);
+  --vsouz-color-secondary:rgba(212, 211, 211, 1);
+  /*! = break points
+  -------------------------------------------------------------- */
+  --app-width: minmax(auto, 6rem); }
+
+/*! = vsouz class
+-------------------------------------------------------------- */
+.vsouz {
+  --color-primary:   var(--vsouz-color-primary);
+  --color-secondary: var(--vsouz-color-secondary); }
+
+/*! = break points
+-------------------------------------------------------------- 
+* 10px		0.625rem
+**/
+@media (max-width: 600px) {
+  :root {
+    --gap: .625rem; } }

@@ -1,0 +1,108 @@
+/*! = $rembase: 16px
+--------------------------------------------------------------
+* hmtl { font-size: 100%; }
+* body { font-size: 16px; font-size: 1rem; line-height: 1; }
+* 4px    	0.25rem
+* 8px		0.5rem
+* 12px		0.75rem
+* 14px		0.875rem
+* 16px		1rem
+* 18px		1.125rem
+* 20px		1.25rem
+* 22px		1.375rem
+* 24px		1.5rem
+* 34px		2.125rem
+* 44px		2.75rem
+* 54px		3.375rem
+* 64px		4rem
+* 72px		4.5rem
+* 80px		5rem
+* 96px		6rem
+*
+*/
+*, html, body {
+  font-size: 100%; }
+  *.uppercase, html.uppercase, body.uppercase {
+    text-transform: uppercase; }
+  *.font-light, html.font-light, body.font-light {
+    font-weight: var(--font-light); }
+  *.font-semi-bold, html.font-semi-bold, body.font-semi-bold {
+    font-weight: var(--font-semi-bold); }
+  *.font-bold, html.font-bold, body.font-bold {
+    font-weight: var(--font-bold); }
+  *.light, html.light, body.light {
+    color: var(--color-light); }
+  *.white, html.white, body.white {
+    color: var(--color-white); }
+
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: var(--font-regular);
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: none;
+  -webkit-font-smoothing: subpixel-antialiased; }
+
+/*! = <H*>
+-------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Change heading typefaces here */
+  color: var(--color-primary);
+  line-height: 100%; }
+
+h1 {
+  font-size: 5rem; }
+
+h2 {
+  font-size: 4rem; }
+
+h3 {
+  font-size: 3rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h5 {
+  font-size: 1.25rem; }
+
+p {
+  font-size: 1rem;
+  text-align: justify; }
+
+caption {
+  font-size: .625rem; }
+
+nav ul li a {
+  font-size: 0.875rem; }
+
+@media (max-width: 1200px) {
+  nav ul li a {
+    font-size: 0.75rem; } }
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem; }
+  h2 {
+    font-size: 2.125rem; }
+  h3 {
+    font-size: 1.375rem; }
+  h4 {
+    font-size: 1.25rem; }
+  p {
+    font-size: .875rem; }
+  caption {
+    font-size: .625rem; } }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem; }
+  h2 {
+    font-size: 1.625rem; } }

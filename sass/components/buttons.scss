@@ -1,0 +1,27 @@
+.btn {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  height: max-content;
+  padding: calc(var(--gap) / 1.5) calc(var(--gap) / 1);
+  text-align: center;
+  transition: all ease-in-out .2s;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: max-content;
+
+  &.btn-lg {
+    padding: calc(var(--gap) / 1) calc(var(--gap) * 1.5);
+  }
+
+  &.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+  }
+
+  &:hover {
+    transform: translateY(2px);
+  }
+
+}
