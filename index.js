@@ -50,14 +50,14 @@ $(function() {
                         
                         if( !slitslider.isActive() ) {
 
-                            $("body").removeClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
+                            $("body").removeClass();
                             $nav.removeClass( 'nav-dot-current' );
                             $dot.addClass( 'nav-dot-current' );
-                            $("body").addClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
                         
                         }
                         
                         slitslider.jump( i + 1 );
+                        $("body").addClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
                         return false;
                     
                     } );

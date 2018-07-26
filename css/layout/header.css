@@ -2,7 +2,8 @@ header {
   grid-column-end: span 12;
   display: grid;
   grid-row-gap: var(--gap);
-  padding: calc(var(--gap) * 2) 0; }
+  padding: calc(var(--gap) * 2) 0;
+  z-index: 3; }
   header .logo svg {
     width: 150px; }
     header .logo svg .logo-r {
