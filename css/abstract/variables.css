@@ -27,6 +27,10 @@
   --dreamsweetdream-color-secondary:rgba(133,72,179, 1);
   --dreamsweetdream-color-primary:  rgba(161,121,187, 1);
   --dreamsweetdream-color-dark:     rgba(89,89,91, 1);
+  /*! = zmc color
+  -------------------------------------------------------------- */
+  --zmc-color-secondary:rgba(244,67,54, 1);
+  --zmc-color-primary:  rgba(0,0,0, .8);
   /*! = break points
   -------------------------------------------------------------- */
   --app-width: minmax(auto, 6rem); }
@@ -35,13 +39,15 @@
 -------------------------------------------------------------- */
 .vsouz {
   --color-primary:   var(--vsouz-color-primary);
-  --color-secondary: var(--vsouz-color-secondary); }
+  --color-secondary: var(--vsouz-color-secondary);
+  --color-dark:      var(--vsouz-color-primary); }
 
 /*! = carpettech class
 -------------------------------------------------------------- */
 .carpettech {
   --color-primary:   var(--carpettech-color-primary);
-  --color-secondary: var(--carpettech-color-secondary); }
+  --color-secondary: var(--carpettech-color-secondary);
+  --color-dark:      var(--carpettech-color-primary); }
 
 /*! = dreamsweetdream class
 -------------------------------------------------------------- */
@@ -49,6 +55,13 @@
   --color-primary:   var(--dreamsweetdream-color-primary);
   --color-secondary: var(--dreamsweetdream-color-secondary);
   --color-dark:      var(--dreamsweetdream-color-secondary); }
+
+/*! = zmc class
+-------------------------------------------------------------- */
+.zmc {
+  --color-primary:   var(--zmc-color-primary);
+  --color-secondary: var(--zmc-color-secondary);
+  --color-dark:      var(--zmc-color-secondary); }
 
 /*! = break points
 -------------------------------------------------------------- 

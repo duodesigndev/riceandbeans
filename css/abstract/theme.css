@@ -26,7 +26,7 @@
 .wrapper-full {
   display: grid;
   grid-gap: var(--gap);
-  grid-template-columns: repeat(12, var(--app-width)); }
+  grid-template-columns: repeat(14, 1fr); }
   .wrapper-full > .inner {
     display: grid;
     grid-column: 2 / 14;
@@ -52,7 +52,7 @@
 .overlay {
   position: relative; }
 
-.overlay::after {
+.overlay::before {
   bottom: 0;
   background: url("../../images/overlay.svg");
   background-size: 4px 4px;

@@ -1,3 +1,7 @@
+#headerContent {
+  pointer-events: none;
+}
+
 header {
   grid-column-end: span 12;
   display: grid;
@@ -8,24 +12,12 @@ header {
   .logo {
     svg {
       width: 150px;
-      .logo-r { fill: var(--color-primary); }
-      .logo-i { fill: var(--color-primary); }
-      .logo-c { fill: var(--color-primary); }
-      .logo-e { fill: var(--color-primary); }
-      .logo-and { fill: var(--color-secondary); }
-      .logo-b { fill: var(--color-primary); }
-      .logo-e { fill: var(--color-primary); }
-      .logo-a { fill: var(--color-primary); }
-      .logo-n { fill: var(--color-primary); }
-      .logo-s { fill: var(--color-primary); }
-      .logo-c { fill: var(--color-primary); }
-      .logo-r { fill: var(--color-primary); }
-      .logo-e { fill: var(--color-primary); }
-      .logo-a { fill: var(--color-primary); }
-      .logo-t { fill: var(--color-primary); }
-      .logo-i { fill: var(--color-primary); }
-      .logo-v { fill: var(--color-primary); }
-      .logo-e { fill: var(--color-primary); }
+      .primary-color {
+        fill: var(--color-primary);
+      }
+      .secondary-color {
+        fill: var(--color-secondary);
+      }
     }
   }
 

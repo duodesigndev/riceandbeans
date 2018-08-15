@@ -11,9 +11,11 @@
 /* Content elements */
 
 .main-container .sl-slide-inner {
-	padding: 10%;
+	padding: 0 10% 5%;
 	display: grid;
-	align-items: center;
+	align-content: end;
+	grid-template-rows: max-content max-content max-content;
+	grid-row-gap: var(--gap);
 }
 
 .main-container .sl-slide .port-about h1 {
@@ -117,7 +119,8 @@
 /* Forth Slide */
 .main-container .bg-4 .sl-slide-inner,
 .main-container .bg-4 .sl-content-slice {
-	background: #5bc2ce;
+	background: #fff url(../images/clients/zmc/hero-image.jpg) right no-repeat;
+	background-size: contain;
 }
 
 .main-container .bg-4 .deco {
@@ -166,42 +169,42 @@
 
 /* Animations for content elements */
 
-.sl-trans-elems .deco{
-	-webkit-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
-	-moz-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
-	-o-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
-	-ms-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
-	animation: roll 1s ease-out both, fadeIn 1s ease-out both;
+.sl-trans-elems .port-about{
+	-webkit-animation: fadeIn 1s ease-out both;
+	-moz-animation: fadeIn 1s ease-out both;
+	-o-animation: fadeIn 1s ease-out both;
+	-ms-animation: fadeIn 1s ease-out both;
+	animation: fadeIn 1s ease-out both;
 }
-.sl-trans-elems h2{
+.sl-trans-elems .port-logo{
 	-webkit-animation: moveUp 1s ease-in-out both;
 	-moz-animation: moveUp 1s ease-in-out both;
 	-o-animation: moveUp 1s ease-in-out both;
 	-ms-animation: moveUp 1s ease-in-out both;
 	animation: moveUp 1s ease-in-out both;
 }
-.sl-trans-elems blockquote{
+.sl-trans-elems .btn-see-results{
 	-webkit-animation: fadeIn 0.5s linear 0.5s both;
 	-moz-animation: fadeIn 0.5s linear 0.5s both;
 	-o-animation: fadeIn 0.5s linear 0.5s both;
 	-ms-animation: fadeIn 0.5s linear 0.5s both;
 	animation: fadeIn 0.5s linear 0.5s both;
 }
-.sl-trans-back-elems .deco{
-	-webkit-animation: scaleDown 1s ease-in-out both;
-	-moz-animation: scaleDown 1s ease-in-out both;
-	-o-animation: scaleDown 1s ease-in-out both;
-	-ms-animation: scaleDown 1s ease-in-out both;
-	animation: scaleDown 1s ease-in-out both;
-}
-.sl-trans-back-elems h2{
+.sl-trans-back-elems .port-about{
 	-webkit-animation: fadeOut 1s ease-in-out both;
 	-moz-animation: fadeOut 1s ease-in-out both;
 	-o-animation: fadeOut 1s ease-in-out both;
 	-ms-animation: fadeOut 1s ease-in-out both;
 	animation: fadeOut 1s ease-in-out both;
 }
-.sl-trans-back-elems blockquote{
+.sl-trans-back-elems .port-logo{
+	-webkit-animation: fadeOut 1s ease-in-out both;
+	-moz-animation: fadeOut 1s ease-in-out both;
+	-o-animation: fadeOut 1s ease-in-out both;
+	-ms-animation: fadeOut 1s ease-in-out both;
+	animation: fadeOut 1s ease-in-out both;
+}
+.sl-trans-back-elems .btn-see-results{
 	-webkit-animation: fadeOut 1s linear both;
 	-moz-animation: fadeOut 1s linear both;
 	-o-animation: fadeOut 1s linear both;
