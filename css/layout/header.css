@@ -1,6 +1,3 @@
-#headerContent {
-  pointer-events: none; }
-
 header {
   grid-column-end: span 12;
   display: grid;
