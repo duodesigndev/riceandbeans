@@ -1,6 +1,9 @@
+#headerContent {
+  grid-row: 1 / 2; }
+
 header {
-  grid-column-end: span 12;
   display: grid;
+  grid-column-end: span 12;
   grid-row-gap: var(--gap);
   padding: calc(var(--gap) * 2) 0;
   z-index: 3; }
