@@ -56,13 +56,16 @@
 
 .overlay::before {
   bottom: 0;
-  background: url("../../images/overlay.svg");
-  background-size: 4px 4px;
+  background: rgba(0, 0, 0, 0.5) url("../../images/overlay.svg");
+  background-size: 2px 2px;
   content: '';
-  height: 70%;
+  height: 100%;
   position: absolute;
   width: 100%;
   opacity: .2; }
+
+.overlay * {
+  z-index: 2; }
 
 svg .overlay-circle {
   fill: var(--color-primary); }

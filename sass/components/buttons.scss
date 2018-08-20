@@ -20,6 +20,11 @@
     color: var(--color-light);
   }
 
+  &.btn-dark {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+  }
+
   &:hover {
     transform: translateY(2px);
   }

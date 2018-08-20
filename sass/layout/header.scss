@@ -1,22 +1,22 @@
 #headerContent {
   grid-row: 1 / 2;
-}
 
-header {
-  display: grid;
-  grid-column-end: span 12;
-  grid-row-gap: var(--gap);
-  padding: calc(var(--gap) * 2) 0;
-  z-index: 3;
+  header {
+    display: grid;
+    grid-column-end: span 12;
+    grid-row-gap: var(--gap);
+    padding: calc(var(--gap) * 2) 0;
+    z-index: 3;
 
-  .logo {
-    svg {
-      width: 150px;
-      .primary-color {
-        fill: var(--color-primary);
-      }
-      .secondary-color {
-        fill: var(--color-secondary);
+    .logo {
+      svg {
+        width: 150px;
+        .primary-color {
+          fill: var(--color-primary);
+        }
+        .secondary-color {
+          fill: var(--color-secondary);
+        }
       }
     }
   }
@@ -30,7 +30,6 @@ header {
     ul li:last-child {
       display: none;
     }
-
   }
 }
 
@@ -43,7 +42,7 @@ header {
 @media (max-width: 1023px) {
   header {
     .main-menu {
-      ul li{
+      ul li {
         &:last-child {
           display: grid;
         }
@@ -59,5 +58,4 @@ header {
 }
 
 @media (max-width: 600px) {
-  
 }

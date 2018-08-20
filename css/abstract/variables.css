@@ -31,6 +31,11 @@
   -------------------------------------------------------------- */
   --zmc-color-secondary:rgba(244,67,54, 1);
   --zmc-color-primary:  rgba(0,0,0, .8);
+  /*! = contact color
+  -------------------------------------------------------------- */
+  --contact-color-secondary:#93F900;
+  --contact-color-primary:  var(--color-light);
+  --contact-color-dark:     var(--color-primary);
   /*! = break points
   -------------------------------------------------------------- */
   --app-width: minmax(auto, 6rem); }
@@ -62,6 +67,13 @@
   --color-primary:   var(--zmc-color-primary);
   --color-secondary: var(--zmc-color-secondary);
   --color-dark:      var(--zmc-color-secondary); }
+
+/*! = contact class
+-------------------------------------------------------------- */
+.contact {
+  --color-primary:   var(--contact-color-primary);
+  --color-secondary: var(--contact-color-secondary);
+  --color-dark:      var(--contact-color-dark); }
 
 /*! = break points
 -------------------------------------------------------------- 

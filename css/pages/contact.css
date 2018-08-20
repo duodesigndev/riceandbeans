@@ -1,7 +1,8 @@
 .bg-hero-image {
-  background: url("../../images/riceandbeans/contact/map.png") center center;
+  background: var(--color-dark);
   background-size: cover;
-  grid-row: 1 / 2; }
+  grid-row: 1 / 2;
+  height: 100vh; }
 
 .section {
   padding: calc(var(--gap) * 5) 0;
@@ -20,12 +21,12 @@
       fill: var(--color-secondary); }
   .section-main h1 {
     background-color: var(--color-primary);
-    color: var(--color-light);
+    color: var(--color-dark);
     padding: calc(var(--gap) / 5) calc(var(--gap) / 2);
     width: max-content; }
   .section-main h3 {
     background-color: var(--color-secondary);
-    color: var(--color-light);
+    color: var(--color-dark);
     padding: calc(var(--gap) / 5) calc(var(--gap) / 2);
     width: max-content; }
 
