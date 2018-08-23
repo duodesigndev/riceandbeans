@@ -1,0 +1,7 @@
+@import 'home';
+@import 'contact';
+
+.section {
+  padding: calc(var(--gap) * 5 ) 0;
+  z-index: 2;
+}

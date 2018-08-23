@@ -4,9 +4,10 @@ function toggleMenu(x) {
     document.getElementsByClassName('main-container')[0].classList.toggle("animate-main")
 }
 
-$(function() {
-    $("#headerContent").load("header.html");
-});
+$(() => {
+  console.log('document loaded');
+  $("#headerContent").load("header.html");
+})
 
 Barba.Pjax.start();
 

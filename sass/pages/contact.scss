@@ -1,48 +1,45 @@
-.bg-hero-image {
-  background: var(--color-dark);
-  background-size: cover;
-  grid-row: 1 / 2;
-  height: 100vh;
-}
+body.contact {
+	.bg-hero-image {
+		background: var(--color-dark);
+		background-size: cover;
+		grid-row: 1 / 2;
+		height: 100vh;
 
-.section {
-  padding: calc(var(--gap) * 5 ) 0;
-  z-index: 2;
-}
+		.section-main {
+			display: grid;
+			grid-column-end: span 12;
+			grid-gap: calc(var(--gap) * 2);
+			align-self: stretch;
+			grid-template-areas: 'address contact-form';
 
-.section-main {
-  display: grid;
-  grid-column-end: span 12;
-  grid-gap: calc(var(--gap) * 2);
-  align-self: stretch;
-  grid-template-areas: 'address contact-form';
+			h1 {
+				background-color: var(--color-primary);
+				color: var(--color-dark);
+				padding: calc(var(--gap) / 5) calc(var(--gap) / 2);
+				width: max-content;
+			}
+			
+			h3 {
+				background-color: var(--color-secondary);
+				color: var(--color-light);
+				padding: calc(var(--gap) / 5) calc(var(--gap) / 2);
+				width: max-content;
+			}
 
-  .contact-form {
-    align-content: center;
-    display: grid;
-    grid-area: contact-form;
-  }
+			.contact-form {
+				align-content: center;
+				display: grid;
+				grid-area: contact-form;
+			}
 
-  .address {
-    align-content: end;
-    display: grid;
-    grid-area: address;
-  }
+			.address {
+				align-content: end;
+				display: grid;
+				grid-area: address;
+			}
 
-  h1 {
-    background-color: var(--color-primary);
-    color: var(--color-dark);
-    padding: calc(var(--gap) / 5) calc(var(--gap) / 2);
-    width: max-content;
-  }
-
-  h3 {
-    background-color: var(--color-secondary);
-    color: var(--color-dark);
-    padding: calc(var(--gap) / 5) calc(var(--gap) / 2);
-    width: max-content;
-  }
-
+		}
+	}
 }
 
 /**
@@ -196,11 +193,9 @@
 }
 
 @media (max-width: 600px) {
-  .section-main {
-    grid-column-end: span 10;
-  }
-  .section-one {
-    grid-column-start: 1;
-    grid-column-end: span 12;
-  }
+	body.contact {
+		.section-main {
+			grid-column-end: span 10;
+		}
+	}
 }
