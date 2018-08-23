@@ -6,9 +6,13 @@
     grid-column-end: span 12;
     grid-row-gap: var(--gap);
     padding: calc(var(--gap) * 2) 0;
+    grid-template-areas: 
+      'logo'
+      'menu';
     z-index: 3;
 
     .logo {
+      grid-area: logo;
       svg {
         width: 150px;
         .primary-color {
@@ -22,6 +26,7 @@
   }
 
   .main-menu {
+    grid-area: menu;
     grid-column-end: span 9;
     align-items: center;
     display: grid;
@@ -33,29 +38,48 @@
   }
 }
 
-@media (max-width: 1800px) {
-}
 
-@media (max-width: 1200px) {
-}
-
-@media (max-width: 1023px) {
-  header {
-    .main-menu {
-      ul li {
-        &:last-child {
-          display: grid;
-        }
-        &:not(:last-child) {
-          display: none;
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+  #headerContent {
+    header {
+      .logo {
+        svg {
+          width: 100px;
         }
       }
     }
   }
 }
 
-@media (max-width: 900px) {
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  #headerContent {
+    header {
+      grid-template-areas: 
+      'logo menu';
+    }
+    .main-menu {
+      justify-content: end;
+      ul li {
+        &:not(:last-child) {
+          display: none;
+        }
+        &:last-child {
+          display: grid;
+          a {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
 }
 
-@media (max-width: 600px) {
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
 }

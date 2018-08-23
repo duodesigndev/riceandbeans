@@ -70,6 +70,7 @@
 .main-container .bg-1 .sl-content-slice {
 	background: #fff url(../images/clients/v-souz/hero-image.jpg);
 	background-size: cover;
+	background-position-x: center;
 }
 
 /* Second Slide */
@@ -77,6 +78,7 @@
 .main-container .bg-2 .sl-content-slice {
 	background: #fff url(../images/clients/carpettech/hero-image.jpg);
 	background-size: cover;
+	background-position-x: right;
 }
 
 .main-container .bg-2 [data-icon]:after,
@@ -93,6 +95,7 @@
 .main-container .bg-3 .sl-content-slice {
 	background: #fff url(../images/clients/dreamsweetdream/hero-image.jpg);
 	background-size: cover;
+	background-position-x: right;
 }
 
 .main-container .bg-3 .deco {
@@ -339,45 +342,13 @@
 }
 
 
-/* Media Queries for custom slider */
-
-@media screen and (max-width: 660px) {
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+	.main-container .port-logo {
+    	height: 150px;
+		width: 150px;
+	}
 	.main-container .sl-slide-inner {
 		padding: 0 10% 20%;
 	}
-
-	.main-container .deco {
-		width: 130px;
-		height: 130px;
-		margin-left: -65px;
-		margin-bottom: 50px;
-	}
-
-	.main-container [data-icon]:after {
-		width: 110px;
-		height: 110px;
-		line-height: 110px;
-		font-size: 40px;
-		margin: -55px 0 0 -55px;
-	}
-
-	.main-container .sl-slide blockquote {
-		margin-bottom: -120px;
-	}
-
-	.main-container .sl-slide h2 {
-		line-height: 22px;
-		font-size: 18px;
-		margin-bottom: -40px;
-		letter-spacing: 8px;
-	}
-
-	.main-container .sl-slide blockquote p:before {
-		line-height: 10px;
-		width: 40px;
-		height: 40px;
-		font-size: 120px;
-		left: -45px;
-	}
-
 }

@@ -25,13 +25,13 @@
 
 /*! = <nav>
 -------------------------------------------------------------- */
-nav ul {
+nav.main-menu ul {
   display: flex;
   flex-flow: row;
   justify-content: flex-start; }
-  nav ul li:not(:first-child) {
+  nav.main-menu ul li:not(:first-child) {
     margin-left: var(--gap); }
-  nav ul li a {
+  nav.main-menu ul li a {
     color: var(--color-primary); }
 
 /*! = <nav class="main-menu">

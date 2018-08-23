@@ -2,17 +2,18 @@ function toggleMenu(x) {
     x.classList.toggle("animate")
     document.getElementsByTagName('body')[0].classList.toggle('perspective')
     document.getElementsByClassName('main-container')[0].classList.toggle("animate-main")
+    document.getElementsByClassName('menu-mobile')[0].classList.toggle('animate-menu-mobile')
 }
 
 $(() => {
-  console.log('document loaded');
+  $("#mainMenuMobile").load("mobile-menu.html");
   $("#headerContent").load("header.html");
+  Barba.Pjax.start();
 })
-
-Barba.Pjax.start();
 
 var FadeTransition = Barba.BaseTransition.extend({
     start: function() {
+
       /**
        * This function is automatically called as soon the Transition starts
        * this.newContainerLoading is a Promise for the loading of the new container

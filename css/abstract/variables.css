@@ -18,10 +18,12 @@
   -------------------------------------------------------------- */
   --vsouz-color-primary:  rgba(217, 190, 174, 1);
   --vsouz-color-secondary:rgba(212, 211, 211, 1);
+  --vsouz-color-dark:     rgba(212, 211, 211, 1);
   /*! = carpettech color
   -------------------------------------------------------------- */
-  --carpettech-color-primary:  rgba(44, 184, 119, 1);
-  --carpettech-color-secondary:rgba(212, 211, 211, 0.548);
+  --carpettech-color-primary:   rgba(44, 184, 119, 1);
+  --carpettech-color-secondary: rgba(212, 211, 211, 0.548);
+  --carpettech-color-dark:      rgba(0, 0, 0, 0.548);
   /*! = dreamsweetdream color
   -------------------------------------------------------------- */
   --dreamsweetdream-color-secondary:rgba(133,72,179, 1);
@@ -38,7 +40,7 @@
   --antenna-color-primary:  rgba(255,255,255,1);
   /*! = contact color
   -------------------------------------------------------------- */
-  --contact-color-secondary:#93F900;
+  --contact-color-secondary:var(--color-secondary);
   --contact-color-primary:  var(--color-light);
   --contact-color-dark:     var(--color-primary);
   /*! = break points
@@ -50,14 +52,14 @@
 .vsouz {
   --color-primary:   var(--vsouz-color-primary);
   --color-secondary: var(--vsouz-color-secondary);
-  --color-dark:      var(--vsouz-color-primary); }
+  --color-dark:      var(--vsouz-color-dark); }
 
 /*! = carpettech class
 -------------------------------------------------------------- */
 .carpettech {
   --color-primary:   var(--carpettech-color-primary);
   --color-secondary: var(--carpettech-color-secondary);
-  --color-dark:      var(--carpettech-color-primary); }
+  --color-dark:      var(--carpettech-color-dark); }
 
 /*! = dreamsweetdream class
 -------------------------------------------------------------- */

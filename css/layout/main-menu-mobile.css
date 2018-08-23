@@ -1,0 +1,37 @@
+#mainMenuMobile {
+  position: absolute;
+  display: grid;
+  height: 100vh;
+  width: 50%;
+  right: 0;
+  background-color: var(--color-secondary);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%); }
+  #mainMenuMobile.animate-menu-mobile {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); }
+  #mainMenuMobile .main-menu-mobile {
+    display: grid;
+    align-content: center; }
+    #mainMenuMobile .main-menu-mobile ul {
+      display: grid;
+      justify-items: center;
+      align-self: stretch;
+      grid-gap: var(--gap); }
+      #mainMenuMobile .main-menu-mobile ul li a {
+        color: var(--color-dark);
+        background-color: var(--color-primary);
+        padding: 0 calc(var(--gap) / 3);
+        margin: 0;
+        width: max-content;
+        font-weight: 900;
+        letter-spacing: calc(var(--gap) / 15);
+        text-transform: uppercase;
+        font-size: 2.5rem; }
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+  #mainMenuMobile {
+    width: 80%; } }
+
+/* Medium devices (landscape tablets, 768px and down) */

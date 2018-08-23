@@ -5,14 +5,18 @@
     grid-column-end: span 12;
     grid-row-gap: var(--gap);
     padding: calc(var(--gap) * 2) 0;
+    grid-template-areas: 'logo' 'menu';
     z-index: 3; }
-    #headerContent header .logo svg {
-      width: 150px; }
-      #headerContent header .logo svg .primary-color {
-        fill: var(--color-primary); }
-      #headerContent header .logo svg .secondary-color {
-        fill: var(--color-secondary); }
+    #headerContent header .logo {
+      grid-area: logo; }
+      #headerContent header .logo svg {
+        width: 150px; }
+        #headerContent header .logo svg .primary-color {
+          fill: var(--color-primary); }
+        #headerContent header .logo svg .secondary-color {
+          fill: var(--color-secondary); }
   #headerContent .main-menu {
+    grid-area: menu;
     grid-column-end: span 9;
     align-items: center;
     display: grid;
@@ -20,8 +24,23 @@
     #headerContent .main-menu ul li:last-child {
       display: none; }
 
-@media (max-width: 1023px) {
-  header .main-menu ul li:last-child {
-    display: grid; }
-  header .main-menu ul li:not(:last-child) {
-    display: none; } }
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+  #headerContent header .logo svg {
+    width: 100px; } }
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  #headerContent header {
+    grid-template-areas: 'logo menu'; }
+  #headerContent .main-menu {
+    justify-content: end; }
+    #headerContent .main-menu ul li:not(:last-child) {
+      display: none; }
+    #headerContent .main-menu ul li:last-child {
+      display: grid; }
+      #headerContent .main-menu ul li:last-child a {
+        font-size: 2rem; } }
+
+/* Large devices (laptops/desktops, 992px and down) */
+/* Extra large devices (large laptops and desktops, 1200px and down) */
