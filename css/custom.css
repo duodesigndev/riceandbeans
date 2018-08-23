@@ -145,7 +145,8 @@
 /* Fifth Slide */
 .main-container .bg-5 .sl-slide-inner,
 .main-container .bg-5 .sl-content-slice {
-	background: #ffeb41;
+	background: #000 url(../images/clients/antenna/hero-image.jpg) right no-repeat;
+	background-size: contain;
 }
 
 .main-container .bg-5 .deco {
@@ -165,6 +166,31 @@
 
 .main-container .bg-5 blockquote:before {
 	color: #ecd82c;
+}
+
+.main-container .bg-5 .port-about h1 {
+	color: var(--color-light);
+	background-color: var(--color-dark);
+	padding: 0 calc(var(--gap) / 3);
+	margin: 0;
+	width: max-content;
+	font-weight: 900;
+	letter-spacing: calc(var(--gap) / 15);
+	text-transform: uppercase;
+}
+
+.main-container .bg-5 .btn-see-results {
+	color: var(--color-secondary);
+	background: var(--color-light);
+	padding: calc(var(--gap) / 2) calc(var(--gap) * 2);
+	text-transform: uppercase;
+	font-weight: 500;
+	width: max-content;
+	transition: all .5s ease;
+}
+
+.main-container .bg-5 .btn-see-results:hover {
+	color: var(--color-dark);
 }
 
 /* Animations for content elements */
@@ -316,6 +342,10 @@
 /* Media Queries for custom slider */
 
 @media screen and (max-width: 660px) {
+	.main-container .sl-slide-inner {
+		padding: 0 10% 20%;
+	}
+
 	.main-container .deco {
 		width: 130px;
 		height: 130px;

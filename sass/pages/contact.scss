@@ -194,8 +194,23 @@ body.contact {
 
 @media (max-width: 600px) {
 	body.contact {
-		.section-main {
-			grid-column-end: span 10;
+		.bg-hero-image {	
+			.section-main {
+				margin-top: 100px;
+				grid-template-areas: "address" "contact-form";
+			}
 		}
+	}
+
+	/**
+ *  INDIVIDUAL STYLE
+ */
+ .input {
+		position: relative;
+		z-index: 1;
+		display: inline-block;
+		margin: 0;
+		width: 100%;
+		vertical-align: top;
 	}
 }

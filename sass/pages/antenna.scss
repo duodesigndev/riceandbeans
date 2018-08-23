@@ -1,0 +1,115 @@
+.bg-hero-image {
+  background: url('../../images/clients/antenna/hero-image.jpg') center center;
+  background-size: cover;
+}
+
+.section {
+  padding: calc(var(--gap) * 5 ) 0;
+  z-index: 2;
+}
+
+.section-main {
+  display: grid;
+  grid-column-end: span 6;
+  grid-gap: calc(var(--gap) * 2);
+  align-self: end;
+
+  svg {
+    width: 100px;
+
+    path {
+      fill: var(--color-primary);
+    }
+    &:hover {
+      path {
+        fill: var(--color-secondary);
+      }
+    }
+  }
+
+  h1 {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: calc(var(--gap) / 5) calc(var(--gap) / 2);
+    width: max-content;
+  }
+
+  h3 {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    padding: calc(var(--gap) / 5) calc(var(--gap) / 2);
+    width: max-content;
+  }
+
+}
+
+.section-one {
+  display: grid;
+  grid-gap: calc(var(--gap) * 3);
+  grid-template-columns: max-content max-content 1fr max-content;
+  grid-column-start: 1;
+  grid-column-end: span 12;
+  padding: calc(var(--gap) * 10 ) 0;
+  
+  .bracket {
+    width: 100px;
+    height: 100px;
+    border: 15px solid var(--color-dark);
+    text-indent: -90000px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .bracket-open {
+    border-right: none;
+    border-top: none;
+  }
+  .bracket-close {
+    position: relative;
+    border-left: none;
+	  border-bottom: none;
+  }
+  .bracket-close::before {
+    position: absolute;
+    content: '';
+    left: -170px;
+    top: 0px;
+    width: 180px;
+    height: 180px;
+    border: 15px solid var(--color-dark);
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    -webkit-transform: rotate(75deg);
+    -moz-transform: rotate(75deg);
+    -o-transform: rotate(75deg);
+    -ms-transform: rotate(75deg);
+    transform: rotate(75deg);
+    z-index: 2;
+  }
+}
+
+@media (max-width: 1800px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 600px) {
+  .section-main {
+    grid-column-end: span 10;
+  }
+  .section-one {
+    grid-column-start: 1;
+    grid-column-end: span 12;
+  }
+}
