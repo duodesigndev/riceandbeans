@@ -71,6 +71,25 @@ body.contact .bg-hero-image {
   border-color: var(--color-secondary);
   cursor: pointer; }
 
+.input__button.success {
+  background-color: #93F900;
+  color: white;
+  border-color: #93F900; }
+
+.input__button.error {
+  background-color: #f44336;
+  color: white;
+  border-color: #f44336; }
+
+.input__button.sending {
+  animation: scale .5s infinite; }
+
+@keyframes scale {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(0.9); } }
+
 .input__field:focus {
   outline: none; }
 

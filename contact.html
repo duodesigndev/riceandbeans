@@ -59,7 +59,7 @@
 </head>
 <body class="contact">
 <div id="barba-wrapper">
-    <div class="barba-container">
+    <div class="barba-container" data-namespace="contact">
 
         <!-- mainMenuMobile -->
         <div id="mainMenuMobile" class="menu-mobile"></div>
@@ -76,11 +76,11 @@
                 <div class="inner">
                     <section class="section section-main">
                         <div class="contact-form">
-                            <form method="POST">
+                            <form id="contactForm" method="POST" action="javascript: void(0);">
                                 <div class="container">
                                     <section class="content bgcolor-1">
                                         <span class="input input--nao">
-                                            <input class="input__field input__field--nao" type="text" id="input-1" />
+                                            <input class="input__field input__field--nao" type="text" id="form_nam" />
                                             <label class="input__label input__label--nao" for="input-1">
                                                 <h3 class="input__label-content input__label-content--nao">Full Name</h3>
                                             </label>
@@ -89,7 +89,7 @@
                                             </svg>
                                         </span>
                                         <span class="input input--nao">
-                                            <input class="input__field input__field--nao" type="text" id="input-2" />
+                                            <input class="input__field input__field--nao" type="text" id="form_email" />
                                             <label class="input__label input__label--nao" for="input-2">
                                                 <h3 class="input__label-content input__label-content--nao">Email</h3>
                                             </label>
@@ -98,7 +98,7 @@
                                             </svg>
                                         </span>
                                         <span class="input input--nao">
-                                            <input class="input__field input__field--nao" type="text" id="input-3" />
+                                            <input class="input__field input__field--nao" type="text" id="msg_text" />
                                             <label class="input__label input__label--nao" for="input-3">
                                                 <h3 class="input__label-content input__label-content--nao">Message</h3>
                                             </label>

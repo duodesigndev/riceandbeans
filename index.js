@@ -74,3 +74,27 @@ var FadeTransition = Barba.BaseTransition.extend({
   
     return FadeTransition;
   };
+
+  var Homepage = Barba.BaseView.extend({
+    namespace: 'home',
+    onEnterCompleted: function() {
+        // The Transition has just finished.
+        $("#mainMenuMobile").load("mobile-menu.html");
+        $("#headerContent").load("header.html");
+    }
+  });
+  
+  // Don't forget to init the view!
+  Homepage.init();
+
+  var Contactpage = Barba.BaseView.extend({
+    namespace: 'contact',
+    onEnterCompleted: function() {
+        // The Transition has just finished.
+        $("#mainMenuMobile").load("mobile-menu.html");
+        $("#headerContent").load("header.html");
+    }
+  });
+  
+  // Don't forget to init the view!
+  Contactpage.init();
