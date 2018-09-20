@@ -80,7 +80,7 @@
                             <form id="contactForm" method="POST" action="javascript: void(0);">
                                 <div class="container">
                                     <section class="content bgcolor-1">
-                                        <span class="input input--nao">
+                                        <span class="input input--nao required">
                                             <input class="input__field input__field--nao" type="text" id="form_name" required />
                                             <label class="input__label input__label--nao" for="input-1">
                                                 <h3 class="input__label-content input__label-content--nao">Full Name</h3>
@@ -89,7 +89,7 @@
                                                 <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
                                             </svg>
                                         </span>
-                                        <span class="input input--nao">
+                                        <span class="input input--nao required">
                                             <input class="input__field input__field--nao" type="text" id="form_email" required/>
                                             <label class="input__label input__label--nao" for="input-2">
                                                 <h3 class="input__label-content input__label-content--nao">Email</h3>
@@ -98,7 +98,7 @@
                                                 <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
                                             </svg>
                                         </span>
-                                        <span class="input input--nao">
+                                        <span class="input input--nao required">
                                             <input class="input__field input__field--nao" type="text" id="msg_text" required/>
                                             <label class="input__label input__label--nao" for="input-3">
                                                 <h3 class="input__label-content input__label-content--nao">Message</h3>
@@ -108,7 +108,8 @@
                                             </svg>
                                         </span>
                                         <span class="input input--nao">
-                                            <button class="input__button">Send</button>
+                                            <input id="foo" type="hidden" value="">
+                                            <button type="submit" class="input__button">Send</button>
                                         </span>
                                         
                                     </section>

@@ -1,75 +1,67 @@
-$(function() {
+export default (() => {
 
-  // CSS Class that represents the client        
-  var Page = (function() {
+    var $navArrows = $('#nav-arrows'),
+        $nav = $('#nav-dots > span'),
+        slitslider = $('#slider').slitslider({
+            onBeforeChange: (slide, pos) => {
 
-      var $navArrows = $( '#nav-arrows' ),
-          $nav = $( '#nav-dots > span' ),
-          slitslider = $( '#slider' ).slitslider( {
-              onBeforeChange : function( slide, pos ) {
+                $nav.removeClass('nav-dot-current');
+                $nav.eq(pos).addClass('nav-dot-current');
 
-                  $nav.removeClass( 'nav-dot-current' );
-                  $nav.eq( pos ).addClass( 'nav-dot-current' );
+            }
+        }),
 
-              }
-          } ),
+        init = () => {
 
-          init = function() {
+            initEvents();
 
-              initEvents();
-              
-          },
-          initEvents = function() {
+        },
+        initEvents = () => {
 
-              $("body").addClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
+            $("body").addClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
 
-              // add navigation events
-              $navArrows.children( ':last' ).on( 'click', function() {
+            // add navigation events
+            $navArrows.children(':last').on('click', () => {
 
-                  $("body").removeClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
-                  slitslider.next();
-                  $("body").addClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
-                  return false;
+                $("body").removeClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
+                slitslider.next();
+                $("body").addClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
+                return false;
 
-              } );
+            });
 
-              $navArrows.children( ':first' ).on( 'click', function() {
-                  
-                  $("body").removeClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
-                  slitslider.previous();
-                  $("body").addClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
-                  return false;
+            $navArrows.children(':first').on('click', () => {
 
-              } );
+                $("body").removeClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
+                slitslider.previous();
+                $("body").addClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
+                return false;
 
-              $nav.each( function( i ) {
-              
-                  $( this ).on( 'click', function( event ) {
-                      
-                      var $dot = $( this );
-                      
-                      if( !slitslider.isActive() ) {
+            });
 
-                          $("body").removeClass();
-                          $nav.removeClass( 'nav-dot-current' );
-                          $dot.addClass( 'nav-dot-current' );
-                      
-                      }
-                      
-                      slitslider.jump( i + 1 );
-                      $("body").addClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
-                      return false;
-                  
-                  } );
-                  
-              } );
+            $nav.each((i) => {
 
-          };
+                $(this).on('click', (event) => {
 
-          return { init : init };
+                    var $dot = $(this);
 
-  })();
+                    if (!slitslider.isActive()) {
 
-  Page.init();
+                        $("body").removeClass();
+                        $nav.removeClass('nav-dot-current');
+                        $dot.addClass('nav-dot-current');
 
-});
+                    }
+
+                    slitslider.jump(i + 1);
+                    $("body").addClass($(slitslider.$slides[slitslider.current]).attr("data-client-name"));
+                    return false;
+
+                });
+
+            });
+
+        };
+
+    return { init: init };
+})();
